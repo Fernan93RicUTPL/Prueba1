@@ -16,23 +16,32 @@ public class TareaIngSoft {
         File archivo;
         FileWriter escribir;
         PrintWriter linea;
-        int  fNacimiento, aActual;
+        int  fNacimiento = 0, aActual;
+        String nombres="", apellidos="", direccion="", correo="";
         archivo = new File("ArchivoResultante.txt");
         if(!archivo.exists()){
             try {
                 archivo.createNewFile();
-                fNacimiento=Integer.parseInt(JOptionPane.showInputDialog("Ingrese su año de nacimiento"));
+                nombres=JOptionPane.showInputDialog(null,"Ingrese sus nombres");
+                apellidos=JOptionPane.showInputDialog(null,"Ingreses sus apellidos");
+                direccion=JOptionPane.showInputDialog(null,"Ingrese su dirección");
+                correo=JOptionPane.showInputDialog(null,"Ingrese su correo electrónico");
                 
+                fNacimiento=Integer.parseInt(JOptionPane.showInputDialog("Introduzca su año de nacimiento"));
                 aActual=Integer.parseInt(JOptionPane.showInputDialog("Ingrese el año actual"));
                 
                 
                 int edad=aActual-fNacimiento;
-                
+                //String nombres="", apellidos="", direccion="", correo="";
                 System.out.println("Su edad es de -> "+edad+" años");
                 
                 escribir = new FileWriter(archivo,true);
                 linea = new PrintWriter(escribir);
                 //escritura en archivo de texto
+                linea.println("Sus nombres-> "+nombres);
+                linea.println("Sus apellidos-> "+apellidos);
+                linea.println("Su dirección-> "+direccion);
+                linea.println("Su correo electrónico-> "+correo+"\n");
                 linea.println("Año de nacimiento ingresado-> "+fNacimiento);
                 linea.println("Año actual-> "+aActual);
                 linea.println("Su edad es de: "+edad+" años");
@@ -46,6 +55,10 @@ public class TareaIngSoft {
         }else{
             try {
                    
+                nombres=JOptionPane.showInputDialog(null,"Ingrese sus nombres");
+                apellidos=JOptionPane.showInputDialog(null,"Ingreses sus apellidos");
+                direccion=JOptionPane.showInputDialog(null,"Ingrese su dirección");
+                correo=JOptionPane.showInputDialog(null,"Ingrese su correo electrónico");
                 fNacimiento=Integer.parseInt(JOptionPane.showInputDialog("Introduzca su año de nacimiento"));
                 
                 aActual=Integer.parseInt(JOptionPane.showInputDialog("Introduzca el año actual"));
@@ -59,6 +72,10 @@ public class TareaIngSoft {
                 escribir = new FileWriter(archivo,true);
                 linea = new PrintWriter(escribir);
                 //escritura en archivo de texto
+                linea.println("Sus nombres-> "+nombres);
+                linea.println("Sus apellidos-> "+apellidos);
+                linea.println("Su dirección-> "+direccion);
+                linea.println("Su correo electrónico-> "+correo+"\n");
                 linea.println("Año de nacimiento ingresado-> "+fNacimiento);
                 linea.println("Año actual-> "+aActual);
                 linea.println("Su edad es de: "+edad+" años");
