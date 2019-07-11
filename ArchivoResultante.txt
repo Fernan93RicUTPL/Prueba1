@@ -1,19 +1,8 @@
-Año de nacimiento ingresado-> 1993
-Año actual-> 2019
-Su edad es de: 26 años
-Sus nombres-> 
-Sus apellidos-> 
-Su dirección-> 
-Su correo electrónico-> 
+****Sus nombres-> Juan Luis****
+****Sus apellidos-> Lopez Gomez****
+****Su dirección-> Las orquideas calle de ejemplo****
+****Su correo electrónico-> Juan123@mail.com**** 
 
 Año de nacimiento ingresado-> 1993
 Año actual-> 2019
-Su edad es de: 26 años
-Sus nombres-> Juan Carlos
-Sus apellidos-> Lopez Gomez
-Su dirección-> juancarlos@mail.com
-Su correo electrónico-> juancarlos@mail.com
-
-Año de nacimiento ingresado-> 1993
-Año actual-> 2019
-Su edad es de: 26 años
+****Su edad es de: 26 años****

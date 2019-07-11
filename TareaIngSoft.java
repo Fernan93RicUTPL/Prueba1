@@ -16,7 +16,7 @@ public class TareaIngSoft {
         File archivo;
         FileWriter escribir;
         PrintWriter linea;
-        int  fNacimiento = 0, aActual;
+        int  fNacimiento, aActual;
         String nombres="", apellidos="", direccion="", correo="";
         archivo = new File("ArchivoResultante.txt");
         if(!archivo.exists()){
@@ -32,19 +32,23 @@ public class TareaIngSoft {
                 
                 
                 int edad=aActual-fNacimiento;
-                //String nombres="", apellidos="", direccion="", correo="";
-                System.out.println("Su edad es de -> "+edad+" años");
+                
+                System.out.println("****Sus nombres -> "+nombres+"****");
+                System.out.println("****Sus apellidos -> "+apellidos+"****");
+                System.out.println("****Su dirección -> "+direccion+"****");
+                System.out.println("****Su correo electrónico -> "+correo+"****");
+                System.out.println("****Su edad es de -> "+edad+"****");
                 
                 escribir = new FileWriter(archivo,true);
                 linea = new PrintWriter(escribir);
                 //escritura en archivo de texto
-                linea.println("Sus nombres-> "+nombres);
-                linea.println("Sus apellidos-> "+apellidos);
-                linea.println("Su dirección-> "+direccion);
-                linea.println("Su correo electrónico-> "+correo+"\n");
+                linea.println("****Sus nombres-> "+nombres+"****");
+                linea.println("****Sus apellidos-> "+apellidos+"****");
+                linea.println("****Su dirección-> "+direccion+"****");
+                linea.println("****Su correo electrónico-> "+correo+"**** \n");
                 linea.println("Año de nacimiento ingresado-> "+fNacimiento);
                 linea.println("Año actual-> "+aActual);
-                linea.println("Su edad es de: "+edad+" años");
+                linea.println("****Su edad es de: "+edad+" años****");
                 
                 linea.close();
                 escribir.close();
@@ -66,19 +70,23 @@ public class TareaIngSoft {
                 
                 int edad=aActual-fNacimiento;
                 
+                System.out.println("****Sus nombres -> "+nombres+" ****");
+                System.out.println("****Sus apellidos -> "+apellidos+" ****");
+                System.out.println("****Su dirección -> "+direccion+" ****");
+                System.out.println("****Su correo electrónico -> "+correo+" ****");
                 System.out.println("Su edad es de -> "+edad+" años");
                 
                 
                 escribir = new FileWriter(archivo,true);
                 linea = new PrintWriter(escribir);
                 //escritura en archivo de texto
-                linea.println("Sus nombres-> "+nombres);
-                linea.println("Sus apellidos-> "+apellidos);
-                linea.println("Su dirección-> "+direccion);
-                linea.println("Su correo electrónico-> "+correo+"\n");
+                linea.println("****Sus nombres-> "+nombres+"****");
+                linea.println("****Sus apellidos-> "+apellidos+"****");
+                linea.println("****Su dirección-> "+direccion+"****");
+                linea.println("***Su correo electrónico-> "+correo+"**** \n");
                 linea.println("Año de nacimiento ingresado-> "+fNacimiento);
                 linea.println("Año actual-> "+aActual);
-                linea.println("Su edad es de: "+edad+" años");
+                linea.println("****Su edad es de: "+edad+" años****");
                 linea.close();
                 escribir.close();
             } catch (IOException ex) {
